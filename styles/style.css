@@ -172,7 +172,7 @@
   height: 890px;
   display: flex;
   flex-direction: column;
-  background-color:#f2f2f2 ;
+  background-color: #f2f2f2 ;
   position: relative;
   padding: 0;
 }
@@ -213,7 +213,7 @@
 }
 
 .kaufman {
-  background-color:  #1f1f1f;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -282,7 +282,7 @@
 .footer {
   min-height: 350px;
   padding: 60px 0 40px;
-  background-color:#1f1f1f;
+  background-color: #1f1f1f;
   display: flex;
   color: #ffffff;
   justify-content: center;
