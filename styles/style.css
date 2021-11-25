@@ -6,26 +6,330 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
-
 .header {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display:flex;
+  align-items: center;
+  padding: 0 0 0 64px;
 }
-
+.logo {
+  background-image: url(../images/logo_place_footer.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  width: 183px;
+  height: 32px;
+  order: 1;
+}
+.header__title {
+  width: 730px;
+  align-self: center;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  order: 1;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-block;
+}
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  order: 1;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.header__link {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+}
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 2;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
+  padding-left: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  z-index: 1;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.description {
+  display: flex;
+  padding: 100px 0 0;
+  align-items: center;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0;
+  margin: 0 auto; 
+}
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  margin: 0;
+  padding: 0;
+}
+.two-columns__paragraf {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 30px 0;
+  padding: 0;
+}
+.two-columns__paragraf:first-child {
+  margin-top: 0;
+}
+.two-columns__paragraf:last-child {
+  margin-bottom: 0;
+}
+.two-columns__span-accent {
+  font-weight: bold;
+}
+.digits {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+}
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  max-width: 60%;
+  bottom: 20px;
+  margin: auto;
+}
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.table{
+  display: flex;
+  width: 1100px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin: 0 auto 100px;
+}
+.table__cell{
+  width: 250px;
+  margin: 60px 0 0;
+}
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.table__text_bank {
+  margin: 20px auto 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.feynman {
+  height: 890px;
+  display: flex;
+  flex-direction: column;
+  background-color:#f2f2f2 ;
+  position: relative;
+  padding: 0;
+}
+.feynman__title {
+  width: 648px;
+  top: 100px;
+  bottom: 70px;
+  margin: auto;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+}
+.feynman__subtitle {
+  margin: auto;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 2;
+}
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+}
+.feynman__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 867px;
+  height: 637px;
+  z-index: 1;
+}
+
+.kaufman {
+  background-color:  #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 90px 0;
+  position: relative;
+}
+.section-title__theme_dark {
+  max-width: 60%;
+  bottom: 20px;
+  margin: auto;
+  color: white;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 2;
+}
+.section-subtitle__theme_dark {
+  max-width: 60%;
+  margin: 0 auto;
+  color: white;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  z-index: 2;
+}
+.table__theme_dark {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin: 0 auto 90px;
+  z-index: 2;
+}
 .table__cell_theme_dark {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  margin: 80px auto 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  flex: 0 0 20%;
+}
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 0 0;
+}
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px auto 0 0;
+}
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
+  z-index: 1;
+}
+
+.footer {
+  min-height: 350px;
+  padding: 60px 0 40px;
+  background-color:#1f1f1f;
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+}
+.footer__columns {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px; 
+}
+.logo_place_footer {
+  position: absolute;
+  width: 183px;
+  height: 35px; 
+}
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: auto auto 18px 0;
+  padding-top: 18px;
+}
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.footer__column-links {
+  margin: 20px auto 16px;
+  list-style: none;
+  padding: 0;
+}
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
 }
