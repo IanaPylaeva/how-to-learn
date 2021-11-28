@@ -296,13 +296,13 @@
 }
 .footer__column_content_copyright {
   display: flex;
-  flex-basis: 711px; 
+  flex-basis: 711px;
   padding-left: 0;
   flex-direction: column;
 }
 .logo_place_footer {
   width: 183px;
-  height: 35px; 
+  height: 35px;
   margin: 0 auto auto 0;
 }
 .footer__author {
