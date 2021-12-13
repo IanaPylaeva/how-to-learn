@@ -3,5 +3,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
+}
+.logo:hover {
+  opacity: 0.3;
 }
